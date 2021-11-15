@@ -1,6 +1,9 @@
+<div class="d-flex justify-content-between">
+  <h1>Develhope Store</h1>
+</div>
 
 <div class="d-flex">
-  <div>
+  <div class="d-flex flex-column justify-content-between">
     <div *ngFor="let product of products">
       <app-cards [product]="product"></app-cards>
     </div>
