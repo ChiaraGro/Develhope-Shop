@@ -1,6 +1,10 @@
 
-<div>
-  <div></div>
+<div class="d-flex">
+  <div>
+    <div *ngFor="let product of products">
+      <app-cards [product]="product"></app-cards>
+    </div>
+  </div>
 
   <div>
     <h2>Benvenuti nello Shop di</h2>
