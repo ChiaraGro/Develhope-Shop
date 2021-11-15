@@ -1,0 +1,41 @@
+h2{
+  position: absolute;
+width: 423px;
+height: 71px;
+left: 671px;
+top: 294px;
+
+font-family: Signika;
+font-style: normal;
+font-weight: 300;
+font-size: 36px;
+line-height: 44px;
+
+color: #000000;
+}
+
+img{
+  position: absolute;
+width: 746px;
+height: 139px;
+left: 447px;
+top: 373px;
+}
+
+h3{
+  position: absolute;
+width: 910px;
+height: 71px;
+left: 397px;
+top: 604px;
+
+font-family: Signika;
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 30px;
+text-align: center;
+
+color: #000000;
+
+}
