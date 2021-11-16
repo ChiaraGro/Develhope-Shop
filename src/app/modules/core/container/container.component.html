@@ -18,7 +18,7 @@
 
 
    <ng-template #detail>
-    <app-card-detail [product]="product" (closedDetail)="closeDetail()"></app-card-detail>
+    <app-card-detail [product]="product" (closedDetail)="closeDetail()" (addToCart)="addToCart($event)"></app-card-detail>
    </ng-template>
 
  </div>
