@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContainerComponent implements OnInit {
   products = PRODUCTS;
-  product!: IProduct;
+  // product!: IProduct;
   selectedProduct?: IProduct;
 
   cart: IProduct[] = [];

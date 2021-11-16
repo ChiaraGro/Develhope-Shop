@@ -7,7 +7,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./card-detail.component.css'],
 })
 export class CardDetailComponent implements OnInit {
-  @Input() product!: IProduct;
+  @Input() product?: IProduct;
 
   @Output() addToCart = new EventEmitter<IProduct>();
   @Output() closedDetail = new EventEmitter();
