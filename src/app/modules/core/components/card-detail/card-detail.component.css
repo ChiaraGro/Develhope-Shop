@@ -1,63 +1,60 @@
-.container{
+.container {
   position: absolute;
-width: 796px;
-height: 698px;
-left: 514px;
-top: 136px;
-
-/* background: #FFFFFF; */
-border: 2px solid #282828;
-box-sizing: border-box;
-box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.55);
+  width: 796px;
+  height: 698px;
+  left: 514px;
+  top: 136px;
+  background: #FFFFFF;
+  border: 2px solid #282828;
+  box-sizing: border-box;
+  box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.55);
 }
 
-.my-3{
+.my-3 {
   position: absolute;
-width: 423px;
-height: 71px;
-left: 518px;
-top: 76px;
+  width: 423px;
+  height: 71px;
+  left: 518px;
+  top: 76px;
 
-font-family: Signika;
-font-style: normal;
-font-weight: 300;
-font-size: 36px;
-line-height: 44px;
+  font-family: Signika;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 44px;
 
-color: #000000;
+  color: #000000;
 }
 
-button{
-width: 93px;
-height: 27px;
-left: 1179px;
-top: 773px;
-
-background: #E43939;
-border-radius: 20px;
-border: none;
+button {
+  width: 93px;
+  height: 27px;
+  left: 1179px;
+  top: 773px;
+  background: #e43939;
+  border-radius: 20px;
+  border: none;
 }
 
 .buy {
   width: 160px;
-height: 40px;
-left: 542px;
-top: 776px;
-
-background: #F7B34E;
-border-radius: 20px;
+  height: 40px;
+  left: 542px;
+  top: 776px;
+  background: #f7b34e;
+  border-radius: 20px;
 }
 
-.close{
+.close {
   width: 160px;
-height: 40px;
-left: 542px;
-top: 776px;
+  height: 40px;
+  left: 542px;
+  top: 776px;
 
-background: #E43939;
-border-radius: 20px;
+  background: #e43939;
+  border-radius: 20px;
 }
 
-img{
+img {
   width: 200px;
 }
