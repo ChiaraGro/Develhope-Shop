@@ -12,7 +12,7 @@ box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.55);
 }
 
 .my-3{
-  /* position: absolute; */
+  position: absolute;
 width: 423px;
 height: 71px;
 left: 518px;
@@ -36,4 +36,24 @@ top: 773px;
 background: #E43939;
 border-radius: 20px;
 border: none;
+}
+
+.buy {
+  width: 160px;
+height: 40px;
+left: 542px;
+top: 776px;
+
+background: #F7B34E;
+border-radius: 20px;
+}
+
+.close{
+  width: 160px;
+height: 40px;
+left: 542px;
+top: 776px;
+
+background: #E43939;
+border-radius: 20px;
 }

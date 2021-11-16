@@ -1,42 +1,33 @@
-<!-- <h1 class="my-3">Dettagli prodotto</h1>
+<h1 class="my-3">Dettagli prodotto</h1>
 <div class="container d-flex flex-column">
-<div class="d-flex flex-row align-items-end mt-5">
-<img src="{{product?.img}}" alt="">
-</div>
-<div class="d-inline">
-<h1 class="my-4">{{product.title}}!</h1>
-<p>Anno di uscita: {{product.exitYear}}</p>
-<p>Altezza: {{product.productHeight}}</p>
-<p>Peso: {{product.productWeight}}</p>
-<p>Pezzi prodotti: {{product.itemsProduced}}</p>
-</div>
-<div class="d-flex flex-column my-5 w-100">
-<div class="w-100">
-  <p>{{product.description}}</p>
-</div>
-<div class="mt-3">
-<b>Prezzo: {{product.price}}€</b>
-</div>
-</div>
-  <button (click)="closedDetail">Chiudi</button>
-</div> -->
-
-
-
-<div class="details card container">
-  <h1 class="my-3">Dettagli prodotto</h1>
-
-  <div class="d-flex flex-column align-items-center">
-  <h1>{{ product.title }}!</h1>
-  <img src="{{product.img}}">
+  <div class="d-flex flex-row align-items-end mt-5">
+    <img src="" alt="" />
   </div>
-  <p>Anno di uscita: {{product?.exitYear}}</p>
-  <p>Peso: {{product?.productWeight}}g</p>
-  <p>Pezzi prodotti: {{product?.itemsProduced}}</p>
-
-  <p class="description">{{product?.description}}</p>
-
-  <button class="mb-2" (click)="closeDetail()">Close</button>
-
-
+  <div class="d-inline">
+    <h1 class="my-4">!</h1>
+    <p>Anno di uscita: {{product?.exitYear}}</p>
+    <p>Altezza: </p>
+    <p>Peso: </p>
+    <p>Pezzi prodotti: </p>
   </div>
+  <div class="d-flex flex-column my-5 w-100">
+    <div class="w-100">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, harum
+        nobis. Molestiae itaque sunt voluptatum veniam quas suscipit
+        exercitationem quos vel expedita, neque blanditiis. Dolorem vitae
+        facilis amet voluptatem nostrum!
+      </p>
+    </div>
+    <div class="mt-3">
+      <b>Prezzo: €</b>
+    </div>
+  </div>
+<div class="d-flex justify-content-between">
+  <button class="buy">Acquista</button>
+  <button class="close" (click)="closeDetail()">Chiudi</button>
+</div>
+</div>
+
+<!-- non funziona il binding. qualche casino nei vari input -->
+<!-- senza il ? non esce nemmeno la roba prima -->

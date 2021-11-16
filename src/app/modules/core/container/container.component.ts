@@ -12,6 +12,8 @@ export class ContainerComponent implements OnInit {
   product!: IProduct;
   selectedProduct?: IProduct;
 
+  cart: IProduct[] = [];
+
   constructor() { }
 
   ngOnInit(): void {
@@ -23,5 +25,9 @@ export class ContainerComponent implements OnInit {
 
   closeDetail(){
     this.selectedProduct = undefined;
+  }
+
+  addToCart(product:IProduct) {
+    this.cart.push(product)
   }
 }
