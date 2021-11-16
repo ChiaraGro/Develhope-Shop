@@ -1,5 +1,5 @@
 import { IProduct } from './../../../../shared/models/product';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-cards',
@@ -8,10 +8,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardsComponent implements OnInit {
   @Input() product!: IProduct;
+  @Output() selectedProduct = new EventEmitter<IProduct>();
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  selectProduct(product: IProduct){
+    this.selectedProduct.emit(product);
+  }
 }

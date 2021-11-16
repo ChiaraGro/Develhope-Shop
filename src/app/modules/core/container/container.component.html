@@ -5,14 +5,22 @@
 <div class="d-flex">
   <div class="d-flex flex-column justify-content-between">
     <div *ngFor="let product of products">
-      <app-cards [product]="product"></app-cards>
+      <app-cards [product]="product" (selectedProduct)="selectProduct($event)"></app-cards>
     </div>
-  </div>
 
-  <div>
+
+  <div *ngIf="!selectedProduct">
     <h2>Benvenuti nello Shop di</h2>
     <img src="https://www.develhope.co/_nuxt/img/cav_black.9dc2b13.svg" alt="logo develhope">
     <h3>Clicca sui dettagli del prodotto per visualizzare tutte le informazioni</h3>
   </div>
+
+
+
+ </div>
+ <div *ngIf="selectedProduct">
+   <!-- si può cambiare col template -->
+  <app-card-detail [product]="product" ></app-card-detail>
+ </div>
 </div>
 

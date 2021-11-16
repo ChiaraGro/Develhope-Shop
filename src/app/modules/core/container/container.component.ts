@@ -10,10 +10,15 @@ import { Component, OnInit } from '@angular/core';
 export class ContainerComponent implements OnInit {
   products = PRODUCTS;
   product!: IProduct;
+  selectedProduct?: IProduct;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  selectProduct(product: IProduct){
+    this.selectedProduct = product;
   }
 
 }

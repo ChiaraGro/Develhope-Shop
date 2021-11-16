@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { IProduct } from './../../../../shared/models/product';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-card-detail',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-detail.component.css']
 })
 export class CardDetailComponent implements OnInit {
+  @Input() product!: IProduct;
 
   constructor() { }
 
