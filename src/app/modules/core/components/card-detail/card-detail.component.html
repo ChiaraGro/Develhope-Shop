@@ -1,7 +1,7 @@
-<h1 class="my-3">Dettagli prodotto</h1>
+<!-- <h1 class="my-3">Dettagli prodotto</h1>
 <div class="container d-flex flex-column">
 <div class="d-flex flex-row align-items-end mt-5">
-<img src="{{product.img}}" alt="">
+<img src="{{product?.img}}" alt="">
 </div>
 <div class="d-inline">
 <h1 class="my-4">{{product.title}}!</h1>
@@ -18,5 +18,25 @@
 <b>Prezzo: {{product.price}}€</b>
 </div>
 </div>
-  <button>Chiudi</button>
-</div>
+  <button (click)="closedDetail">Chiudi</button>
+</div> -->
+
+
+
+<div class="details card container">
+  <h1 class="my-3">Dettagli prodotto</h1>
+
+  <div class="d-flex flex-column align-items-center">
+  <h1>{{ product.title }}!</h1>
+  <img src="{{product.img}}">
+  </div>
+  <p>Anno di uscita: {{product?.exitYear}}</p>
+  <p>Peso: {{product?.productWeight}}g</p>
+  <p>Pezzi prodotti: {{product?.itemsProduced}}</p>
+
+  <p class="description">{{product?.description}}</p>
+
+  <button class="mb-2" (click)="closeDetail()">Close</button>
+
+
+  </div>

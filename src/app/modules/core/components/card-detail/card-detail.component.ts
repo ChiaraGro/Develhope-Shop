@@ -8,10 +8,15 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class CardDetailComponent implements OnInit {
   @Input() product!: IProduct;
+  @Output() closedDetail = new EventEmitter();
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  closeDetail(){
+    this.closedDetail.emit();
   }
 
 }

@@ -21,4 +21,7 @@ export class ContainerComponent implements OnInit {
     this.selectedProduct = product;
   }
 
+  closeDetail(){
+    this.selectedProduct = undefined;
+  }
 }

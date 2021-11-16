@@ -8,19 +8,16 @@
       <app-cards [product]="product" (selectedProduct)="selectProduct($event)"></app-cards>
     </div>
 
-
-  <div *ngIf="!selectedProduct">
+  <div *ngIf="!selectedProduct; else detail">
     <h2>Benvenuti nello Shop di</h2>
     <img src="https://www.develhope.co/_nuxt/img/cav_black.9dc2b13.svg" alt="logo develhope">
     <h3>Clicca sui dettagli del prodotto per visualizzare tutte le informazioni</h3>
   </div>
-
-
-
  </div>
- <div *ngIf="selectedProduct">
-   <!-- si può cambiare col template -->
-  <app-card-detail [product]="product" ></app-card-detail>
+
+
+   <ng-template #detail>
+    <app-card-detail [product]="product" (closedDetail)="closeDetail()"></app-card-detail>
+   </ng-template>
  </div>
-</div>
 

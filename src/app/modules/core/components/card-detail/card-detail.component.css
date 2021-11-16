@@ -5,14 +5,14 @@ height: 698px;
 left: 514px;
 top: 136px;
 
-background: #FFFFFF;
+/* background: #FFFFFF; */
 border: 2px solid #282828;
 box-sizing: border-box;
 box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.55);
 }
 
 .my-3{
-  position: absolute;
+  /* position: absolute; */
 width: 423px;
 height: 71px;
 left: 518px;
