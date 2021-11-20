@@ -3,23 +3,23 @@
   <div class="bg-primary align-items-start w-10 h-25 p-2 text-white rounded">Carrello ({{cart.length}})</div>
 </div>
 
-<div class="d-flex">
+<div class="d-flex w-100">
+
   <div class="d-flex flex-column justify-content-between">
     <div *ngFor="let product of products">
       <app-cards [product]="product" (selectedProduct)="selectProduct($event)"></app-cards>
     </div>
-
-  <div *ngIf="!selectedProduct; else detail">
-    <h2>Benvenuti nello Shop di</h2>
-    <img src="https://www.develhope.co/_nuxt/img/cav_black.9dc2b13.svg" alt="logo develhope">
-    <h3>Clicca sui dettagli del prodotto per visualizzare tutte le informazioni</h3>
-  </div>
  </div>
 
+ <div *ngIf="!selectedProduct; else detail" class="d-flex flex-column flex-fill align-items-center align-self-center">
+  <h2>Benvenuti nello Shop di</h2>
+  <img src="https://www.develhope.co/_nuxt/img/cav_black.9dc2b13.svg" alt="logo develhope">
+  <h3>Clicca sui dettagli del prodotto per visualizzare tutte le informazioni</h3>
+</div>
 
-   <ng-template #detail>
-    <app-card-detail [product]="selectedProduct" (closedDetail)="closeDetail()" (addToCart)="addToCart($event)"></app-card-detail>
-   </ng-template>
+<ng-template #detail>
+  <app-card-detail [product]="selectedProduct" (closedDetail)="closeDetail()" (addToCart)="addToCart($event)"></app-card-detail>
+ </ng-template>
 
  </div>
 
